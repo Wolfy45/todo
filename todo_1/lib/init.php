@@ -23,5 +23,5 @@ include"model/etat.php";
 session_start();
 
 //connexion à la bdd
-$bdd = new PDO("mysql:host=localhost;dbname=projets_todo_qperrichon;charset=UTF8","qperrichon-exam","Aorus@42170");
+$bdd = new PDO("mysql:host=localhost;dbname=db_name_base;charset=UTF8","login","password");
 $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
