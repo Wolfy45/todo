@@ -1,0 +1,1 @@
+<option value="<?=htmlentities($user->id)?>"><?=htmlentities($user->nom ." ". $user->prenom)?></option>
