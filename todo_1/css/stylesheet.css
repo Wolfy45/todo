@@ -1,0 +1,481 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 juil. 2020, 12:26:39
+    Author     : eleve
+*/
+/* IMPORT */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 juil. 2020, 09:35:20
+    Author     : eleve
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+.flex {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  box-shadow: 0rem 1rem 3rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer nav a {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+footer nav p {
+  margin-bottom: 0;
+}
+
+footer address p {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.col4 {
+  width: 33.3333333333%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.connection, .espace {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.espace2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.connection form {
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  margin-bottom: 0;
+  padding: 2rem;
+}
+
+.list-tache p {
+  margin-right: 1rem;
+  margin-bottom: 0, 5rem;
+  width: 100%;
+  color: black;
+  margin-left: 1.5rem;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.2rem;
+}
+
+.list-tache2 {
+  margin-right: 1rem;
+  margin-bottom: 0, 5rem;
+  width: 100%;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bolder;
+  align-items: baseline;
+}
+
+.menu nav a {
+  margin-right: 1rem;
+}
+
+.separator {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+article {
+  margin-top: 2rem;
+}
+
+.popup-tache {
+  position: fixed;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.fond-opaque {
+  position: fixed;
+  z-index: -1;
+  top: -100%;
+  left: -100%;
+  background-color: grey;
+  opacity: 60%;
+  width: 1000%;
+  height: 1000%;
+  cursor: pointer;
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 juil. 2020, 09:35:43
+    Author     : eleve
+*/
+/* POLICE ET COULEUR */
+/*
+        font-family: 'Patrick Hand', cursive;
+
+    font-family: 'Roboto', sans-serif;
+
+    */
+h1, h2, h3, h4, h5, h6, .logo, .menu {
+  font-family: "Patrick Hand", cursive;
+  text-transform: uppercase;
+}
+
+footer nav a, footer nav p, footer address p, .btn-2 {
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.2rem;
+}
+
+.menu {
+  font-size: 1.2rem;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+.btn-outline-primary, p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+}
+.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, label {
+  color: #fff;
+}
+
+.min_title {
+  font-weight: bolder;
+  text-decoration: underline #0056b3;
+  margin-right: 1rem;
+}
+
+select option {
+  color: black;
+}
+
+footer nav p, footer address p:first-of-type {
+  border-left: 2px solid #0056b3;
+  padding-left: 1rem;
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 juil. 2020, 09:36:35
+    Author     : eleve
+*/
+.btn-outline-primary:hover {
+  color: black;
+}
+
+a:hover {
+  transition: all linear 250ms;
+  text-decoration: none;
+}
+
+.btn-2 {
+  color: black;
+  font-size: 1.2rem;
+}
+.btn-2:hover {
+  color: #0056b3;
+  transition: all linear 250ms;
+}
+
+.top {
+  position: fixed;
+  right: 2%;
+  font-size: 2.5rem;
+  bottom: 15%;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 0.25rem;
+  border: 2px solid #fff;
+}
+.top:hover {
+  border-color: #0056b3;
+  transition: all linear 250ms;
+  text-decoration: none;
+}
+
+.menu_hamb {
+  height: 40px;
+  width: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.menu_hamb:hover .barre {
+  background-color: #0056b3;
+  transition: all linear 250ms;
+}
+
+.barre {
+  width: 100%;
+  background-color: #fff;
+  height: 3px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 juil. 2020, 09:35:32
+    Author     : eleve
+*/
+header {
+  background-image: url("../image/fond-ardoise.jpg");
+  padding: 0.5rem 2rem;
+}
+
+footer {
+  background-image: url("../image/fond-ardoise.jpg");
+  padding: 2rem 3rem;
+}
+
+.bg-sticker {
+  background-image: url("../image/stickers.png");
+  background-position-x: center;
+  background-position-y: 71%;
+  background-size: auto;
+  position: relative;
+  max-width: 368px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-image: url("../image/fond-ardoise2.jpg");
+  background-size: cover;
+}
+
+.bg-ard {
+  background-image: url("../image/fond-ardoise.jpg");
+  background-position: center;
+}
+
+.attention {
+  background-image: url("../image/attention.png");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -9px;
+  right: 9px;
+}
+
+.refuser {
+  background-image: url("../image/refuser.png");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -9px;
+  right: 9px;
+}
+
+.fait {
+  background-image: url("../image/fait.png");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -9px;
+  right: 9px;
+}
+
+.afaire {
+  background-image: url("../image/afaire.png");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -9px;
+  right: 9px;
+}
+
+.abandonner {
+  background-image: url("../image/abandonner.png");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -9px;
+  right: 9px;
+}
+
+.encour {
+  background-image: url("../image/en-cours.png");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -12px;
+  right: 4px;
+}
+
+.fond-menu {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 80%;
+}
+
+/* MEDIA */
+@media all and (min-width: 1024.99px) {
+  .large-hidden, .menu_hamb {
+    display: none;
+  }
+}
+@media all and (max-width: 1200px) {
+  .menu {
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 1024px) {
+  .medium-hiddden {
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 32;
+    justify-content: space-between;
+  }
+
+  section {
+    padding-top: 6rem;
+  }
+
+  .menu {
+    position: fixed;
+    top: 6%;
+    z-index: 2;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+  .menu nav {
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .menu nav a {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  .connection {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+@media all and (max-width: 1199.99px) {
+  .refuser, .attention, .abandonner, .encour, .afaire, .fait {
+    top: -14px;
+    right: -9px;
+  }
+}
+@media all and (max-width: 991.99px) {
+  .refuser, .attention, .abandonner, .encour, .afaire, .fait {
+    top: -14px;
+    right: -4px;
+  }
+
+  .col4 {
+    width: 50%;
+  }
+
+  .popup-tache {
+    width: 100%;
+    position: unset;
+    transform: none;
+  }
+}
+@media all and (max-width: 575.99px) {
+  .top {
+    right: 1%;
+    bottom: 1%;
+    font-size: 1.8rem;
+    opacity: 60%;
+  }
+
+  .col4 {
+    width: 100%;
+  }
+
+  .refuser, .attention, .abandonner, .encour, .afaire, .fait {
+    top: -14px;
+    right: 24px;
+  }
+}
+@media all and (max-width: 375.99px) {
+  .refuser, .attention, .abandonner, .encour, .afaire, .fait {
+    top: -14px;
+    right: -14px;
+  }
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
