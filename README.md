@@ -1,7 +1,7 @@
 # todo
 Organisateur de tâche
 
-Application de  gestion de tâch "A faire" , permettant a des collaboratteurs de gérer ce qu'ils ont a faire,mais aussi de confier des  tâches à d'autres collègues en fonction des besoins
+Application de  gestion de tâche "A faire" , permettant a des collaboratteurs de gérer ce qu'ils ont a faire,mais aussi de confier des  tâches à d'autres collègues en fonction des besoins
 
 Une tâche comporte les informations suivantes :
  une date/heure de création
